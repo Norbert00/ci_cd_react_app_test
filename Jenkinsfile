@@ -20,13 +20,6 @@ pipeline {
     }
 
     stages {
-        stage("Check out") {
-            steps {
-                script {
-                    git "https://github.com/Norbert00/ci_cd_react_app_test"
-                }
-            }
-        }
 
         stage ("Build app") {
             steps {
