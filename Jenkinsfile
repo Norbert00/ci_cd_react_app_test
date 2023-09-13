@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        label "ec2_docker_node"
+        //label "ec2_docker_node"
         docker {
             image "node:slim"
         }
     }
-    enviroment {
+    environment {
                 // This can be nexus3 or nexus2
         NEXUS_VERSION = "nexus3"
         // This can be http or https
