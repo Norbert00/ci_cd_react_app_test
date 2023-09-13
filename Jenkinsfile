@@ -1,5 +1,6 @@
 pipeline {
-    agnet {
+    agent {
+        label "ec2_docker_node"
         docker {
             image "node:slim"
         }
